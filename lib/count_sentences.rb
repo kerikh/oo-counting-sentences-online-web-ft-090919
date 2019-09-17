@@ -1,5 +1,3 @@
-require 'pry'
-
 class String
 
   def sentence?
@@ -13,7 +11,6 @@ class String
   def exclamation?
     self.end_with?("!") ? true : false
   end
-
   def count_sentences
     self.split(/[?.!]/).count { |s| s.length > 0}
   end
